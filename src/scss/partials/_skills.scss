@@ -40,7 +40,7 @@
         grid-template-columns: auto auto auto;
         justify-content: space-around;
         align-items: center;
-        width: 50vw;
+        width: 70vw;
         .skill {
             height: 100px;
             width: 300px;
@@ -71,6 +71,96 @@
                     font-family: $worksans;
                     font-size: 25px;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .skills .list-skills {
+        grid-template-columns: auto auto;
+        // grid-column-gap: 80px;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .skills .list-skills {
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 682px) {
+    .skills {
+        h2 {
+            font-size: 45px;
+        }
+        .filters p {
+            padding: 12px 18px;
+            margin: 10px;
+            width: 100px;
+        }
+        .list-skills {
+            grid-column-gap: 0px;
+            padding: 10px;
+            .skill {
+                margin: 10px 5px;
+                height: 90px;
+                width: 230px;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .skills {
+        .filters p {
+            padding: 6px 12px;
+            width: 100%;
+        }
+        .list-skills .skill {
+            width: 200px;
+            img {
+                height: 50px;
+            }
+            .skill-description p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .skills {
+        h2{
+            margin-top: 90px;
+        }
+        .filters p {
+            font-size: 13px;
+        }
+        .list-skills .skill {
+            width: 170px;
+            height: 70px;
+            img {
+                height: 40px;
+            }
+            .skill-description p {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .skills {
+        .filters p {
+            font-size: 13px;
+            padding: 2px 7px;
+        }
+        .list-skills .skill {
+            width: 150px;
+            height: 70px;
+            img {
+                height: 40px;
+            }
+            .skill-description p {
+                font-size: 17px;
             }
         }
     }

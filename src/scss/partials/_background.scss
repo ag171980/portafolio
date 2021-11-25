@@ -8,19 +8,19 @@
     align-items: center;
     .img {
         position: relative;
-        img {
+        img,
+        .circle {
             height: 350px;
             width: 350px;
             border-radius: 50%;
+        }
+        img {
             position: relative;
             z-index: 1;
             border: 5px solid #0f0f0f;
         }
         .circle {
-            height: 350px;
-            width: 350px;
             background-color: #00ffff;
-            border-radius: 50%;
             opacity: 0.5;
             position: absolute;
             top: 2%;
@@ -33,7 +33,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        z-index: 8;
+        z-index: 1;
         h1 {
             font-size: 70px;
             padding: 0;
@@ -77,6 +77,71 @@
                     font-size: 18px;
                     color: #0f0f0f;
                     font-family: $worksans;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .background {
+        .img {
+            img,
+            .circle {
+                height: 250px;
+                width: 250px;
+            }
+        }
+        .descripcion {
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 23px;
+            }
+            .buttons .button p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 610px) {
+    .background {
+        flex-direction: column;
+        justify-content: center;
+        .img {
+            img,
+            .circle {
+                height: 350px;
+                width: 350px;
+            }
+        }
+        .descripcion {
+            margin: 20px 0;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .background {
+        flex-direction: column;
+        justify-content: center;
+        .img {
+            img,
+            .circle {
+                height: 250px;
+                width: 250px;
+            }
+        }
+        .descripcion {
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 19px;
+            }
+            .buttons {
+                margin: 0 auto;
+                .button p {
+                    font-size: 18px;
                 }
             }
         }

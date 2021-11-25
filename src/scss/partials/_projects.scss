@@ -102,6 +102,84 @@
         }
     }
 }
+@media (max-width: 1245px) {
+    .projects .list-projects {
+        grid-template-columns: auto auto;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+        width: 100%;
+    }
+}
+@media (max-width: 865px) {
+    .projects {
+        h2 {
+            font-size: 45px;
+        }
+        .list-projects {
+            grid-row-gap: 20px;
+            grid-column-gap: 50px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .projects .list-projects .project .img {
+        height: 150px;
+        width: 280px;
+        .description {
+            h3 {
+                color: white;
+                font-size: 20px;
+                font-family: $worksans;
+            }
+            .tecnologias .tecnologia p {
+                font-size: 9px;
+            }
+
+            .buttons {
+                margin: 5px 0;
+                a {
+                    font-size: 10px;
+                    height: 25px;
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 615px) {
+    .projects {
+        h2 {
+            font-size: 35px;
+        }
+        .list-projects {
+            grid-column-gap: 20px;
+            .project .img {
+                height: 150px;
+                width: 240px;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .projects {
+        h2{
+            margin-top: 90px;
+        }
+        .list-projects {
+            grid-template-columns: auto;
+            .project .img {
+                height: 200px;
+                width: 360px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .projects .list-projects .project .img {
+        height: 160px;
+        width: 280px;
+    }
+}
 @keyframes animation {
     0% {
         opacity: 0;
