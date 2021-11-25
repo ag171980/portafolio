@@ -88,6 +88,13 @@ export default {
       ],
       projects: [
         {
+          img: require("../assets/imgProjects/portfolio/portfolio.png"),
+          tecnologias: ["Vue", "Sass"],
+          nombre: "Portfolio",
+          repo: "https://github.com/ag171980/portafolio",
+          demo: "https://portfolionicolas.netlify.app",
+        },
+        {
           img: "https://capacitacion.neuquen.gov.ar/wp-content/uploads/2020/01/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg",
           tecnologias: ["Vue", "MongoDB", "Laravel"],
           nombre: "Spotifake",
