@@ -1,0 +1,16 @@
+@use "partials/navbar";
+@use "partials/background";
+@use "partials/about";
+@use "partials/skills";
+@use "partials/projects";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    scroll-behavior: smooth;
+}
+.home {
+    background: #0f0f0f;
+}

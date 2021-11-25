@@ -1,0 +1,84 @@
+@import "fonts";
+.background {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .img {
+        position: relative;
+        img {
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+            border: 5px solid #0f0f0f;
+        }
+        .circle {
+            height: 350px;
+            width: 350px;
+            background-color: #00ffff;
+            border-radius: 50%;
+            opacity: 0.5;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            z-index: 0;
+        }
+    }
+    .descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 8;
+        h1 {
+            font-size: 70px;
+            padding: 0;
+            letter-spacing: 5px;
+            color: #c61ce4;
+            font-family: $bebas;
+        }
+        p {
+            font-size: 28px;
+            padding: 10px 0;
+            color: white;
+            font-family: $opensans;
+        }
+        h1,
+        p {
+            z-index: 99;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .button {
+                padding: 0 10px;
+                margin: 10px 0;
+                background-color: #00ffff;
+                border-radius: 25px;
+                transition: 0.3s all;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+                &:nth-child(1) {
+                    margin-right: 15px;
+                    background-color: #c61ce4;
+                    p {
+                        color: white;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                    color: #0f0f0f;
+                    font-family: $worksans;
+                }
+            }
+        }
+    }
+}

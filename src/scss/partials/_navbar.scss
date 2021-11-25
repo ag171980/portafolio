@@ -1,0 +1,42 @@
+@import "fonts";
+.navbar {
+    padding: 17px 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #0f0f0f;
+    border-bottom: 2px solid rgba($color: #c61ce4, $alpha: 0.3);
+    a {
+        color: #c61ce4;
+        text-decoration: none;
+        padding: 17px 24px;
+        font-size: 21px;
+        transition: 0.5s all;
+        font-family: $worksans;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+    .contacts {
+        position: fixed;
+        top: 5px;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            color: #c61ce4;
+            font-size: 24px;
+            padding: 15px 20px;
+            transition: 0.3s all;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
