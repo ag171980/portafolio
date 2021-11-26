@@ -1,14 +1,14 @@
 <template>
   <div class="background" id="home">
     <div class="img">
-      <Foto></Foto>
+      <Foto :img="content.img"></Foto>
       <div class="circle"></div>
     </div>
     <div class="descripcion">
-      <h1>{{ nombre }}</h1>
+      <h1>{{ content.name }}</h1>
       <p>{{ puesto }} Developer</p>
       <div class="buttons">
-        <div class="button" v-for="(dev, idx) in developer" :key="idx">
+        <div class="button" v-for="(dev, idx) in content.developer" :key="idx">
           <p @mouseover="showDev(dev.nombre)">{{ dev.nombre }}</p>
         </div>
       </div>
@@ -19,18 +19,19 @@
 import Foto from "@/components/Foto.vue";
 export default {
   name: "Background",
+  props: ["content"],
   components: {
     Foto,
   },
   data() {
     return {
-      nombre: "Alexis Gutierrez",
+      name: "Alexis Gutierrez",
       puesto: "Frontend",
-      developer: [{ nombre: "Frontend" }, { nombre: "Backend" }],
     };
   },
   methods: {
     showDev(puesto) {
+      // this.$emit('puesto',puesto);
       this.puesto = puesto;
     },
   },

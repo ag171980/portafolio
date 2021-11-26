@@ -1,5 +1,14 @@
 <template>
-    <div class="img">
-        <img src="https://pbs.twimg.com/media/D4im7FnWkAEyPrz.jpg" alt="">
-    </div>
+  <div class="img">
+    <img
+      :src="img"
+      alt=""
+    />
+  </div>
 </template>
+<script>
+export default {
+  name:"Foto",
+  props:["img"]
+}
+</script>

@@ -2,9 +2,9 @@
   <div class="about" id="aboutme">
     <h2>About Me</h2>
     <div class="card">
-      <Foto></Foto>
+      <Foto :img="content.img"></Foto>
       <div class="description">
-        <h3>Alexis Gutierrez</h3>
+        <h3>{{content.name}}</h3>
         <p>
           Tengo 21 años y actualmente estoy estudiando
           <span>Ingeniería en Sistemas</span>. A la vez, de forma autodidacta
@@ -14,7 +14,7 @@
           profesionalmente como personalmente</span>, uno donde pueda <span>aportar mis
           conocimientos y aprender del equipo</span>.<br />
           En mis tiempos libres me gusta seguir aprendiendo haciendo cursos,
-          salir con mi perro, ver series.
+          salir con mi perro, ver series y fútbol.
         </p>
       </div>
     </div>
@@ -24,7 +24,7 @@
 import Foto from "@/components/Foto.vue";
 export default {
   name: "About",
-  props:["nombre"],
+  props:["content"],
   components: {
     Foto,
   },
