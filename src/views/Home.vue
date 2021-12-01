@@ -18,7 +18,8 @@ export default {
     return {
       myData: {
         name: "Alexis Gutierrez",
-        img: "https://pbs.twimg.com/media/D4im7FnWkAEyPrz.jpg",
+        // img: "https://pbs.twimg.com/media/D4im7FnWkAEyPrz.jpg",
+        img:require("../assets/perfil.png"),
         puesto: "Frontend",
         edad: "22 años",
         carrera: "Ingeniería en Sistemas",
