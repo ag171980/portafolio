@@ -127,11 +127,11 @@ export default {
             demo: "https://portfolionicolas.netlify.app",
           },
           {
-            img: "https://capacitacion.neuquen.gov.ar/wp-content/uploads/2020/01/225-2256239_web-en-construccion-png-sitio-en-construccion.jpg",
-            tecnologias: ["Vue", "MongoDB", "Laravel"],
+            img: require("../assets/imgProjects/spotifake/spotifake.png"),
+            tecnologias: ["Vue", "Laravel"],
             nombre: "Spotifake",
-            repo: "",
-            demo: "",
+            repo: "https://github.com/ag171980/music-app",
+            demo: "https://spottifake.netlify.app/",
           },
           {
             img: require("../assets/imgProjects/weatherapp/weather.png"),
